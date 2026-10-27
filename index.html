@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartPark AI - Intelligent Parking Management</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none">
+                        <rect width="40" height="40" rx="10" fill="url(#logoGrad)"/>
+                        <path d="M12 28V12h8a6 6 0 0 1 0 12h-8" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="logoGrad" x1="0" y1="0" x2="40" y2="40">
+                                <stop stop-color="#6366f1"/>
+                                <stop offset="1" stop-color="#8b5cf6"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">SmartPark</span>
+                    <span class="logo-subtitle">AI System</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-menu">
+            <div class="menu-section">
+                <span class="menu-label">Main</span>
+                <a href="#" class="menu-item active" data-page="dashboard">
+                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7" rx="1"/>
+                        <rect x="14" y="3" width="7" height="7" rx="1"/>
+                        <rect x="3" y="14" width="7" height="7" rx="1"/>
+                        <rect x="14" y="14" width="7" height="7" rx="1"/>
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="menu-item" data-page="parking-map">
+                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="1" y="3" width="22" height="18" rx="2"/>
+                        <line x1="1" y1="9" x2="23" y2="9"/>
+                        <line x1="12" y1="9" x2="12" y2="21"/>
+                    </svg>
+                    <span>Parking Map</span>
+                    <span class="badge">MAP</span>
+                </a>
+                <a href="#" class="menu-item" data-page="analytics">
+                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
+                    </svg>
+                    <span>Analytics</span>
+                </a>
+                <a href="#" class="menu-item" data-page="predictions">
+                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 6v6l4 2"/>
+                    </svg>
+                    <span>Predictions</span>
+                    <span class="badge badge-ai">AI</span>
+                </a>
+            </div>
+
+            <div class="menu-section">
+                <span class="menu-label">Management</span>
+                <a href="#" class="menu-item" data-page="zones">
+                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <span>Zones</span>
+                </a>
+                <a href="#" class="menu-item" data-page="cameras">
+                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                        <circle cx="12" cy="13" r="4"/>
+                    </svg>
+                    <span>Cameras</span>
+                </a>
+                <a href="#" class="menu-item" data-page="alerts">
+                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                    </svg>
+                    <span>Alerts</span>
+                    <span class="badge badge-count">3</span>
+                </a>
+                <a href="#" class="menu-item" data-page="settings">
+                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <span>Settings</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar-footer">
+            <div class="system-status">
+                <div class="status-indicator online"></div>
+                <div class="status-info">
+                    <span class="status-text">Demo Mode</span>
+                    <span class="status-detail">Sample data · not live</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Bar -->
+        <header class="topbar">
+            <div class="topbar-left">
+                <button class="menu-toggle" id="menuToggle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+                <div class="page-title-area">
+                    <h1 class="page-title" id="pageTitle">Dashboard</h1>
+                    <span class="page-breadcrumb" id="pageBreadcrumb">Home / Dashboard</span>
+                </div>
+            </div>
+            <div class="topbar-right">
+                <div class="search-box">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
+                    <input id="globalSearch" type="search" placeholder="Search slots, zones, cameras..." class="search-input" aria-label="Search parking data" aria-controls="searchResults" aria-expanded="false" autocomplete="off">
+                    <div class="search-results" id="searchResults" role="listbox" aria-label="Search results" hidden></div>
+                </div>
+                <div class="topbar-actions">
+                    <button class="action-btn" id="refreshBtn" title="Refresh View" aria-label="Refresh view">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 4 23 10 17 10"/>
+                            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                        </svg>
+                    </button>
+                    <button class="action-btn notification-btn" title="Notifications" aria-label="Open alerts" onclick="App.loadPage('alerts')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                        </svg>
+                        <span class="notification-dot"></span>
+                    </button>
+                    <div class="user-menu">
+                        <div class="user-avatar">
+                            <span>AP</span>
+                        </div>
+                        <div class="user-info">
+                            <span class="user-name">Admin Panel</span>
+                            <span class="user-role">Super Admin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Content Container -->
+        <div class="content-area" id="contentArea">
+            <!-- Pages will be loaded here dynamically -->
+        </div>
+    </main>
+
+    <!-- Notification Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/parkingmap.js"></script>
+    <script src="js/analytic.js"></script>
+    <script src="js/prediction.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
