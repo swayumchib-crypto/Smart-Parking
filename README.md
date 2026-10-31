@@ -273,13 +273,3 @@ Issues and pull requests are welcome.
 4. Open a PR with a short description of the change.
 
 ---
-
-## License
-
-No license file is included yet. If you plan to reuse or publish this project, add a `LICENSE` (for example MIT) so others know the terms.
-
----
-
-<p align="center">
-  <sub>SmartPark AI · sample dashboard for intelligent parking · not connected to live sensors</sub>
-</p>
